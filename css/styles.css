@@ -1,0 +1,172 @@
+/* ================== Global ================== */
+/* Global reset: ensures consistent box sizing */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Layout base: sticky footer structure, global font & background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Main area grows to fill leftover height so footer sticks to bottom */
+main {
+  padding: 24px 0;
+  flex: 1;
+}
+
+/* ================== Header ================== */
+
+/* Header background & spacing */
+header {
+  padding: 16px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Center-aligned main site title */
+.site-title {
+  text-align: center;
+  margin: 0;
+  color: #fff;
+}
+
+/* ================== Navigation ================== */
+
+/* Navigation list (horizontal menu) */
+.nav-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Menu links: always white, strong weight */
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Prevent color change on visited state */
+.nav-list a:visited,
+header nav ul a:visited {
+  color: #fff;
+}
+
+/* Hover underline effect for clarity */
+.nav-list a:hover,
+header nav ul a:hover {
+  text-decoration: underline;
+}
+
+/* ================== Typography ================== */
+
+/* Headings share a consistent color */
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+/* Paragraph style */
+p {
+  color: #666;
+  margin: 0 0 8px 0;
+}
+
+/* ================== General Content Links ================== */
+/* Override default browser styling for links inside <main> */
+main a {
+  color: #000;             /* Black links inside article cards */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Prevent color change after visiting */
+main a:visited {
+  color: #000;
+}
+
+/* Subtle hover state */
+main a:hover {
+  text-decoration: underline;
+}
+
+/* ================== Article Cards ================== */
+
+/* Card container design: white block, shadow, rounded edges */
+article {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+/* Card image: always responsive, bottom spacing */
+article img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Card titles */
+article h2,
+article h3 {
+  margin: 0 0 8px 0;
+}
+
+/* ================== Footer ================== */
+/* Footer design mirrors the header (dark background) */
+footer {
+  border-top: 1px solid #ccc;
+  padding: 16px 0;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Footer text consistency */
+footer p {
+  margin: 0;
+  color: #fff;
+}
+
+/* ================== Latest Posts Title ================== */
+
+/* Title inside centered column should align left */
+.posts-title {
+  text-align: left;
+  width: 100%;
+}
+
+/* Wrapper ensures the title block stays centered across screen sizes */
+.posts-title-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
